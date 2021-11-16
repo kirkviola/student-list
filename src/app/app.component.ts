@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: '<h1>Student List!</h1>',
+  styles: ["h1 { color: red; } "]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'student-list';
+
+  ngOnInit() : void {
+    console.debug("This is a debug message");
+  }
 }

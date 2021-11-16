@@ -8,6 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'student-list';
   name: string = "";
+  display: boolean = true;
+  subject: any = null;
+
+  colors: any[] = [
+    "red", "white", "blue", "yellow", "green"
+  ];
 
   clicked(): void {
     this.title = "Fred's student-list";

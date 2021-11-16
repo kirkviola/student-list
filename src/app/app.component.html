@@ -1,7 +1,17 @@
 <h1>Student List</h1>
 <h3>{{title}}</h3>
+<div>
+  <ul>
+    <li *ngFor="let color of colors">{{color}}</li>
+  </ul>
+</div>
 <button (click)="clicked()">Click me!</button>
 <div>
   <input type="text" [(ngModel)]="name" size="20"> |
   <label>{{name}}</label>
 </div>
+
+<p *ngIf="display === true">This displays if true</p>
+<p *ngIf="!display">This displays if not true</p>
+<h1 *ngIf="subject">The subject is {{subject}}</h1>
+<input type="text" [(ngModel)]="subject" size="20">
